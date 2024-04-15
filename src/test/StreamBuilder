@@ -1,0 +1,6 @@
+STREAM BUILDER
+- Kadang kita ingin membuat Stream secara manual, seperti menambah datanya ke Stream secara manual misalnya
+- Java menyediakan Stream Builder untuk membuat Stream secara manual, dan kita bisa menggunakannya seperti Collection, kita bisa membuat Stream builder, menambahkan data ke Stream Builder, setelah selesai, baru kita buat Streamnya
+
+
+NB : INI JIKA KITA MAU MASUKIN DATA MANUAL SATU PER SATU

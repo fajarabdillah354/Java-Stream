@@ -1,0 +1,6 @@
+STREAM OPERATIONS
+- Berbeda dengan java Collection,di Java Stream hal yang sangat menarik adalah fitur Stream Operationsnya
+- Stream Operations adalah kumpulan operasi-operasi yang bisa kita gunakan untuk memanipulasi Stream itu sendiri(data yanng ada didalamnya)
+- Ada banyak sekali jenis2 Stream Operations
+- Namun secara garis besar, Stream Operations tidak akan memodifikasi data aslinya,melainkan hasil dari Stream Operations adalah sebuah Stream Baru(saat menggunakan operationsnya kita seakan2 membuat data baru Stream tidak merubah data aslinya)
+
