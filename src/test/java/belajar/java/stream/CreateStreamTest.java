@@ -83,7 +83,7 @@ public class CreateStreamTest {
 
 //        dataString.forEach(System.out::println);
 
-        Stream<Integer> dataInteger = Stream.iterate(1, value -> value+1);//ini contoh penggunaan infinite loop dengan record  yang berbeda dimana value akan terus bertambah
+        Stream<Integer> dataInteger = Stream.iterate(1, value -> value+1);//ini contoh penggunaan infinite loop dengan record  yang berbeda dimana nilai 1 akan menjadi variabel value, dan value akan terus di+1
 
         dataInteger.forEach(System.out::println);
 
