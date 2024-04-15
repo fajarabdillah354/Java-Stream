@@ -1,0 +1,20 @@
+STREAM PIPELINE
+
+- Saat kita membuat Stream, Biasanya kita akan melakukan banyak operasi terhadap Stream tersebut
+- Dan biasanya kita akan membuat Stream Pipeline
+- Stream Pipeline terdiri dari sebuah sumber stream(bisa array,collection, dan lain2), lalu diikuti dengan kosong atau lebih stream operations dan diakhhiri dengan operasi akhir, misal forEach
+- Saat menggunakan Stream, hampir kebanyakan kita pasti akan membuat sebuah Stream Pipeline(rata2 make ini)
+
+
+ex :
+
+@Test
+    void testCreateStreamPipeline() {
+
+        List<String> list = List.of("nur asiah","maisaroh","inne qonitati");
+
+        list.stream()
+                .map(upper -> upper.toUpperCase())
+                .map(addNy -> "Ny. "+addNy)
+                .forEach(System.out::println);
+
