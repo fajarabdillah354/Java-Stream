@@ -1,0 +1,31 @@
+RETRIEVING OPERATIONS
+- Retrieving Operations adalah operasi pada Stream untuk melakukan pengambilan sebagian data
+- Secara garib besar, cara kerjanya hampir mirip dengan Filtering
+
+METHOD RETRIEVING OPERATIONS
+
+1. limit(n)     : Mengambil sejumlah n data pertama
+2. skip(n)       : menghiraukan sejumlah n data pertama
+3. takeWhile(T -> Boolean)      : Mengambil data selama kondisi true
+4. dropWhile(T -> Boolean)      : Menghiraukan data selama kondisi true(hanya yang false saja)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RETRIEVING SINGLE ELEMENT
+- Stream juga memiliki kemampuan untuk mengambil satu element saja
+- Namun operasi jenis ini merupakan operasi terminal, sehingga akan secara otomatis menjalankan aliran data di Stream
+nb : operasi terminal merupaka operasi yang bisa langsung menjalankan aliran Stream tanpa menggunakan method bawaan Stream seperti forEach()
+
+

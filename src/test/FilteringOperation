@@ -1,0 +1,10 @@
+FILTERING OPERATIONS
+
+- Filtering Operations adalah operasi di Stream yang digunakan untuk melakukan filter data Stream
+- Contohnya kita punya Stream data dari 1 - 10, lalu kita misalnya ingin menggunakan data yang ganjil atau genap saja
+
+
+METHOD FILTERING OPERATIONS
+1. filter(U -> Boolean)    :     Mengambil data  yang masuk kriteria filter
+2. distinct()              :     Menghapus semua data yang duplikat
+

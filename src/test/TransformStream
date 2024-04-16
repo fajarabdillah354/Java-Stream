@@ -1,0 +1,21 @@
+TRANSFORMATION OPERATIONS
+
+- Ada banyak Stream Operations di java stream, kita akan mulai bahas dari Transformation Operations
+- Transformation Operations adalah operasi yang digunakan untuk mengubah bentuk Stream
+- Ada banyak function yang bisa digunakan untuk mengubah bentuk Stream menjadi sebuah Stream baru, contohnya map() dan flatMap()
+
+METHOD TRANSFORMATION OPERATIONS
+1. map(T->U)  :   Mengubah Stream T menjadi Stream U
+2. flatMap(T -> Stream<U>)   :    Mengubah Stream T menjadi Stream U
+
+     @Test
+    void testTransformMap() {
+        //Contoh Transform dengan Map
+        List.of("fajar","abdillah","ahmad").stream()
+                .map(value -> value.toUpperCase())//transform ke String
+                .map(getLength -> getLength.length())//transform ke Integer
+                .forEach(data -> System.out.println(data));
+
+    }
+
+

@@ -1,0 +1,35 @@
+LAZY EVALUATION
+
+- Stream secara default adalah lazy
+- Dia tidak akan mengalirkan data jika belum menggunakann terminal operation
+- Selain itu, data hanya akan dialirkan seperlunya saja, tergantung terminal operationnya
+
+INTERMEDIATE & TERMINAL OPERATIONS
+- Secara garis besar, ada 2 jenis Stream Operation, yaitu Interrmediate dan Terminal Operrations
+- Intermediate Operations merupakan lazy Operation,dimana Stream tidak akan dieksekusi ssampai memang dibutuhkan
+- Sedangkan Terminal Operations merupakan operasi yang men trigger sebuah stream berjala
+- Karena Intermediate Operations adalah lazy, maka secara garis besar, semua intermediate Operations akan mengembalikan Stream lagi
+(JIKA RETURN BUKAN STREAM BERARTI ITU TERMINAL OPERATION)
+
+EX INTERMEDIATE Operation:
+    @Test
+    void testIntemediateStream() {
+
+        List<String> list = List.of("fajar","abdillah","ahmad");
+
+        list.stream()
+                .map(name ->{
+                    System.out.println("Change "+ name + "toUpper");
+                    return name.toUpperCase();
+                });//saat kita jalankan ini tidak terjadi apa2 karna ini bersifat lazy
+    }
+
+    Operasi map adalah intermediate operation,walaupun ditambah operation map maka string tidak akan dieksekusi maka perlu memakai Terminal Operation
+
+
+    untuk mentrigger kita harus menggunakan Terminal Operation salah satunya dengan penggunaan forEach()
+
+    NB:Dalam stream ada aliran data, ketika menemukan operation maka data akan masuk 1 per 1 tidak langsung semua atau tidak seperti collection
+
+
+
