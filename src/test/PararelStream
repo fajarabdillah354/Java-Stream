@@ -1,0 +1,12 @@
+Parrarel Stream
+
+- salah satu fitur yang menarik di java adalah,Stream bisa dijalankan secara parallel
+- materi tentang parrarell programming akan di bahas lebih detail di java Thread
+- secara garis besar pararel artinya adalah beberapa proses yang berjalan secara bersamaan
+- secara default , parellel Stream akan dijalankan di ForkJoinPool, dimana akan dirunning secara default menggunakan Thread sejumlah maksimal total CPU kita
+
+
+nb = - defaultnya program akan running secara sequential(berurutan dari atas kebawah)
+     - saat membuat parrarel ada kemungkinan data kita akan running di Thread yang berbeda
+
+

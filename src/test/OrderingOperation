@@ -1,0 +1,9 @@
+Ordering Operation
+
+- java stream mendukung operasi untuk melakukkan pengurutan data streammnya
+- secara default data akan diurutkan mengikuti comparable yang terdapat di data yang ada dalam stream
+- jika kita ingin mengurutkan secara manual, kita bisa menggunakan comparator sndiri
+
+method orderin
+1. sorted()  ->> mengurutkan berdasarkan comparable data
+2. sorted(Comparator) -> mengurutkan berdasarkan comparator

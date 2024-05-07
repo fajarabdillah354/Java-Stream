@@ -1,0 +1,12 @@
+For Each Operation
+
+- untuk mengiterasi data 1 per 1 kita sudah sering menggunakan foreach
+- selai foreach, ada juga method untuk melakukan for each, tapi tanpa harus melakukan terminal operation
+
+
+Method foreach operation
+
+forEeach(T->void)    :   melakukan iterasi 1 per 1 data di stream, ini adalah terminal operation
+peek(T->void)        :   melakukan iterasi satu per 1 data di stream, namun mengembalikan stream lagi dan bukan terminal operation
+
+

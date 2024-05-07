@@ -1,0 +1,23 @@
+Grouping by
+
+- Collectors juga bisa digunakan untuk melakukan grouping by sebuah Stream
+- Hasil dari grouping by adalah Map<Group(groupKey), List<value>>
+
+
+contohnya
+
+.collector(Collectors.groupingBy(
+    number -> {
+        if(number>5){
+            return "BESAR"
+        }else{
+            return "KECIL"
+        }
+    }
+));
+
+
+Partitioning By
+- Selain grouping By,Collectors juga bisa digunakan untuk partitioning By
+- Hanya saja hasil dari partitioning by hanyalah 2 buah group boolean(True,False)
+- hasil dari ini adalah Map<Boolean, List<value>>
