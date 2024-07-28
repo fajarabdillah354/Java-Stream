@@ -1,0 +1,18 @@
+Aggregate Operation
+
+- java Stream mendukung banyak operasi untuk melakukan proses aggregate
+- seperti menghitung jumlah data, menghitung data max dan menghitung data min\
+
+
+Method yang bisa digunakan
+1. max(Comparator) -> mencari data max sesuai comparator
+2. min(Comparator) -> mencari data min sesuai comparator
+3. count() -> menghitung total data
+
+
+
+Manual Aggregate menggunakan Reduce
+
+- Java mempunyai sebuaah operasi bernama reduce
+- ini bisa digunakan melakukan operasi aggregate secara manual
+- misal kita ingin menjumlahkan seluruh angka yang terdapat di stream, kita bisa menggunakan reduce operator
