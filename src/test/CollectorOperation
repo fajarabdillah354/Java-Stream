@@ -1,0 +1,21 @@
+Collect Operation
+- Stream memiliki sebuah operator bernama collect(collector), function ini biasanya digunakan untuk meng-collect data Stream dan
+  kita ubah menjadi struktur data yang kita inginkan, biasanya kebanyakan developer menggunakan operator collect() untuk mengubah Stream menjadi Collection
+- Operator collect() membutuhkan parameter Collector, namun biasanya jarang sekalli membuat implementasi interface Collector, karna terlalu complek
+
+
+
+
+Collectors
+- collectors adalah class helper yang bisa digunakan untuk membuat Collector
+- ini mempermudah kita ketika ingin melakukan operasi collect terhadap sebuah Stream
+- ada banyak static method yang terdapat di class Collectors
+
+
+
+Membuat Map dengan Collectors
+- selain collection, collectors juga bisa digunakan membuat Map dari String
+- yang membedakan dengan List atau Set, kita harus menentukan function untuk membentu key dan valueya jika ingin membuat Map
+- ada banyak function yang bisa kita gunakan seperti Collectors.toMap(), Collectors.toConcurentMap() ini bisa diakses pararel dengan beberapa proses, dan Collectors.toUnmodifiableMap()
+
+
